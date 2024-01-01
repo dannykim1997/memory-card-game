@@ -1,6 +1,6 @@
-import Header from './Header'
-import Game from './Game'
-import '../App.css'
+import Header from './Header';
+import Game from './Game';
+import '../css/app.css';
 
 function App() {
 
