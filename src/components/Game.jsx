@@ -10,21 +10,21 @@ function Game() {
     
     const handleCardClick = (cardId) => {
         if (clickedCards.includes(cardId)) {
-            if (score > bestScore) {
-                setBestScore(score);
-                console.log(`best score: ${score}`);
-                return score;
-            }
-                setClickedCards([]);
-                setScore(0);
+            setBestScore((prevBestScore) => {
+                if (score > prevBestScore) {
+                    return score;
+                }
+                return prevBestScore;
+            });
+    
+            setClickedCards([]);
+            setScore(0);
         } else {
             setClickedCards((prevClickedCards) => [...prevClickedCards, cardId]);
-            setScore((prevScore) => {
-                console.log(`score: ${prevScore + 1}`);
-                return prevScore + 1;
-              });
+            setScore((prevScore) => prevScore + 1);
         }
     };
+    
 
     return (
         <div>

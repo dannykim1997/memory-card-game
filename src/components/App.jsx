@@ -3,7 +3,6 @@ import Game from './Game';
 import '../css/app.css';
 
 function App() {
-
   return (
     <div>
       <Header />

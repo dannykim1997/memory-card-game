@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
 import '../css/card.css';
 import PropTypes from 'prop-types';
 
@@ -12,7 +12,7 @@ function Card({images, onClick}) {
 
     const handleImageClick = (id) => {
         onClick(id);
-        // console.log(images);
+        setShuffledImages(shuffleArray(images));
     }
 
     return (
@@ -35,7 +35,6 @@ function shuffleArray(array) {
       const j = Math.floor(Math.random() * (i + 1));
       [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
     }
-    console.log(shuffledArray);
     return shuffledArray;
 }
 
