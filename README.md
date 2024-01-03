@@ -1,8 +1,7 @@
-# React + Vite
+AniMemory is a React based memory game featuring mainstream anime titles.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+It features the usage of components, props, states, and side effects.
 
-Currently, two official plugins are available:
+Click the pictures while making sure not to click on the same one twice!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
