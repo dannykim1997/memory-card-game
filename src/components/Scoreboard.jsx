@@ -1,9 +1,9 @@
+import '../css/app.css';
 import PropTypes from 'prop-types';
 
 function Scoreboard({score, bestScore}) {
     return (
-        <div>
-            <p>Scoreboard</p>
+        <div className='scoreboard'>
             <p>Score: {score}</p>
             <p>Best Score: {bestScore}</p>
         </div>

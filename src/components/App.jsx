@@ -1,5 +1,6 @@
 import Header from './Header';
 import Game from './Game';
+import Footer from './Footer';
 import '../css/app.css';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div>
       <Header />
       <Game />
+      <Footer />
     </div>
   );
 }

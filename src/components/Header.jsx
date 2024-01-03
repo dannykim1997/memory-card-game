@@ -1,7 +1,8 @@
+import '../css/app.css';
 
 function Header() {
     return (
-        <div>Header</div>
+        <div className="header">AniMemory</div>
     );
 }
 

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import '../css/card.css';
+import '../css/app.css';
 import PropTypes from 'prop-types';
 
 
@@ -17,11 +17,11 @@ function Card({images, onClick}) {
 
     return (
         <div>
-            <ul>
+            <ul className='card-container'>
                 {shuffledImages.map(img => (
                     <li key={img.id} className="card" onClick={() => handleImageClick(img.id)}>
                         <img src={img.src} alt={img.name} className="image"/>
-                        <p>{img.name}</p>
+                        <p className='card-title'>{img.name}</p>
                     </li>
                 ))}
             </ul>
