@@ -1,20 +1,22 @@
 body {
-    background-color: gray;
+    background-color: rgb(0,0,0);
     color: white;
     margin: 0px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .header {
     font-size: 36px;
     text-align: center;
-    background-color: blue;
-    padding: 0px;
+    padding: 20px;
+    color: purple;
 }
 
 .scoreboard {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     font-size: 24px;
+    color: rgb(255, 255, 255);
 }
 
 .card-container {
@@ -30,7 +32,7 @@ body {
     list-style-type: none;
     text-align: center;
     margin: 16px;
-    border: 4px solid #ddd;
+    border: 4px solid purple;
     border-radius: 4px;
     width: calc(20% - 32px);
     min-width: 180px;
@@ -41,7 +43,7 @@ body {
 
 .image {
     width: 100%;
-    height: 350px;
+    height: 200px;
     object-fit: cover;
 }
 
@@ -54,7 +56,7 @@ body {
     align-items: center;
     font-size: 18px;
     justify-content: center;
-    background-color: red;
+    background-color: grey;
 }
 
 .github-logo {
